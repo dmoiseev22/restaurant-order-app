@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1>Jimmy’s Diner</h1>
+                <h3>The best burgers and pizzas in town.</h3>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="container">
+                <div id="menu" class="menu">
+                </div>
+            </div> 
+        
+        <div class="container">
+            <div id="orderList" class="order"> 
+                <h2 class="center">Your order</h2>
+                <div id="order-list" class="order-list">
+                    
+                    <div class="order-list-item pizza-total">
+                        <div>
+                            <h2>Pizza  <span id="remove-pizza" class="remove"> remove </span></h2>
+                        </div>
+                        <div>
+                            <p id="pizza-total-price" class="price"> $14 </p>
+                        </div>
+                    </div>
+                    
+                    <div class="order-list-item hamburger-total">
+                        <div>
+                            <h2>Hamburger  <span id="remove-hamburger" class="remove"> remove </span></h2>
+                        </div>
+                        <div>
+                            <p id="hamburger-total-price" class="price"> $14 </p>
+                       </div>
+                    </div>
+                    
+                    <div class="order-list-item beer-total">
+                        <div>
+                            <h2>Beer  <span id="remove-beer" class="remove"> remove </span></h2>
+                        </div>
+                        <div>
+                            <p id="beer-total-price" class="price"> $14 </p>
+                       </div>
+                    </div>
+                    
+                    <!-- ORDER SUMMARY BLOCK -->
+
+                    <div class="order-total"> 
+                        <div class="order-total-element">
+                            <div>
+                                <h2 class="center">Total price</h2>
+                            </div>
+                            <div>
+                                <p id="total-price" class="price"> $14 </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                <button id="complete-order-btn" class="complete-order-btn">Complete order</button>
+           
+            </div>
+        </div>
+        
+            <!-- MODAL BLOCK -->
+            
+            <div class="modal">
+                <h2 class="modal-title">Enter card details</h2>  
+                <form id="pay-form">
+                    <input id="client-name" name="name" type="text" placeholder="Enter your name" required>
+                    <input id="card-number" name="card-number" type="number" placeholder="Enter your card number" required>
+                    <input id="card-cvv" name="card-cvv" type="number" placeholder="Enter CVV" required>
+                    <button id="pay-btn" class="pay-btn" type="submit">Pay</button>
+                </form>
+            </div>
+            <!-- THANK YOU MESSAGE BLOCK -->
+            <div class="thank-you-box">
+                <p id="thank-you-message"></p>
+            </div>
+            <!-- END OF MODAL BLOCK -->
+        </div>
+    </main>
+           
+	<script src="index.js" type="module"></script>
+    
+    </body>
+</html>
+
