@@ -46,7 +46,6 @@ body {
 .img {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     font-size: 4.6em;
     margin: 0;
 }
