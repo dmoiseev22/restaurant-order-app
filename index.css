@@ -9,7 +9,7 @@ body {
 } 
 
 .header {
-    width: 600px;
+    max-width: 600px;
     height: 140px;
     margin: 0px auto;
     background-color: #cccccc;
@@ -19,7 +19,7 @@ body {
 }
 
 .main {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -44,8 +44,10 @@ body {
 }
 
 .img {
-    font-size: 100px;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    font-size: 4.6em;
     margin: 0;
 }
 
